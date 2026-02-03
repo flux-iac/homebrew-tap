@@ -5,20 +5,20 @@
 class Tfctl < Formula
   desc ""
   homepage "https://flux-iac.github.io/tofu-controller"
-  version "0.16.0"
+  version "0.16.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.0/tfctl_Darwin_amd64.tar.gz"
-      sha256 "c4040c6c697b8f8d101aa10d87bdfc3ee6cf8b2b4f5216aed1da7fddb3827621"
+      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.1/tfctl_Darwin_amd64.tar.gz"
+      sha256 "fd14d0afbd78b10201b99832ec12cb3f4839fa3c3c28015ee77abfbe4838d600"
 
       def install
         bin.install "tfctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.0/tfctl_Darwin_arm64.tar.gz"
-      sha256 "ce15eff83283842b9ebe2392942eb1b57c51c85d922f5260e86abad3759facd3"
+      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.1/tfctl_Darwin_arm64.tar.gz"
+      sha256 "6eb6b1a396bc5158018d84ffd3dd6233d558c070715de7feb50eabd5e488cb9a"
 
       def install
         bin.install "tfctl"
@@ -28,22 +28,22 @@ class Tfctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.0/tfctl_Linux_amd64.tar.gz"
-      sha256 "bc2351a53e8c28d410283595a38520b512f70a38df759ed0fedacb69a58a133e"
+      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.1/tfctl_Linux_amd64.tar.gz"
+      sha256 "68753f30c14df4d2044868992449c4779a0dd359db36c4f46182740c0f573004"
       def install
         bin.install "tfctl"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.0/tfctl_Linux_armv6.tar.gz"
-      sha256 "79ea9b79540b5b5c44ab934fe463fe174144e845dd9055b2f6b396d4bf4348df"
+      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.1/tfctl_Linux_armv6.tar.gz"
+      sha256 "29195d43abba3c608cadb6332fd847ccb4f3f95a3dd75332ce9eb9503b4d7717"
       def install
         bin.install "tfctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.0/tfctl_Linux_arm64.tar.gz"
-      sha256 "bc7a59aaac46d1380f07acc90557dce396fdd5dcebe8abaa8177a182d2d6f749"
+      url "https://github.com/flux-iac/tofu-controller/releases/download/v0.16.1/tfctl_Linux_arm64.tar.gz"
+      sha256 "bf897f7f8c756c72a50115496aa144b17dc00488e0fc9ece5ecb7703813e039d"
       def install
         bin.install "tfctl"
       end
